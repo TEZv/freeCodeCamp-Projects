@@ -1,4 +1,4 @@
-# freeCodeCamp-RandomQuoteMachine
+# freeCodeCamp-RandomQuoteMachine #for certification
 # The project can be a little modified rather than in User Stories but the structure had been folllowed by:)
 
 ::      :Soooo, the work was organized by these as follows:      ::
@@ -18,3 +18,5 @@ Fulfill the below user stories and get all of the tests to pass. Give it my pers
 [x] User Story #9: My quote machine should fetch the new quote's author when the #new-quote button is clicked and display it in the #author element.
 [x] User Story #10: I can tweet the current quote by clicking on the #tweet-quote a element. This a element should include the "twitter.com/intent/tweet" path in its href attribute to tweet the current quote.
 [x] User Story #11: The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized.
+
+My live set by GitHub: 
