@@ -1,7 +1,7 @@
 :root {
     --green-color: #c0f55ec4;
     --dark-green-color: rgb(55, 150, 0);
-    --red-color: rgb(218, 15, 15);
+    --red-color: rgb(129, 22, 22);
     --purple-color: rgb(105, 105, 255);
 }
 
@@ -26,7 +26,7 @@ div > div > h1 > span {
 
 h1.header-text {
     max-width: 70%;
-    margin: 20px auto;
+    margin: 10px auto;
     color: var(--red-color);
     text-align: center;
     font-size: 3em;
@@ -36,7 +36,17 @@ h1.header-text {
 h1.header-text::first-letter {
     color: var(--red-color);
 }
+.tag {
+    color: var(--red-color);
+}
 
 div>div>h1::first-line {
     color: var(--dark-green-color);
+}
+
+hr {
+    max-width: 80%;
+    height: 1px;
+    background-color: var(--red-color);
+    border: 2px dashed var(--green-color);
 }
