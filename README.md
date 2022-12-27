@@ -1,6 +1,12 @@
 # freeCodeCamp-RandomQuoteMachine
-# It can be a little modified, but this project is remaining of these User Stories:)
+# The project can be a little modified rather than in User Stories but the structure had been folllowed by:)
 
+::      :Soooo, the work was organized by these as follows:      ::
+# Tasks
+Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/qRZeGZ.
+Fulfill the below user stories and get all of the tests to pass. Give it my personal style.
+
+# User Stories
 [x] User Story #1: I can see a wrapper element with a corresponding id="quote-box".
 [x] User Story #2: Within #quote-box, I can see an element with a corresponding id="text".
 [x] User Story #3: Within #quote-box, I can see an element with a corresponding id="author".
