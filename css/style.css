@@ -1,11 +1,12 @@
 :root {
+    --white-color: #fff;
     --green-color: #c0f55ec4;
     --light-green-color: rgba(87, 252, 101, 0.548);
     --dark-green-color: rgb(55, 150, 0);
     --red-color: rgb(129, 22, 22);
     --purple-color: rgb(105, 105, 255);
     --grey-color: #4c5340c4;
-    --dark-grey-color: rgba(46, 44, 44, 0.7);
+    --dark-grey-color: rgba(36, 30, 30, 0.938);
     --blue-color: rgba(17, 171, 243, 0.74);
 }
 
@@ -70,14 +71,37 @@ hr {
     background-color: var(--blue-color);
     font-size: 1em;
     font-family: 'Karla', sans-serif;
-    color: #fff;
+    color: var(--white-color);
     font-weight: 400;
     text-align: center;
     border-bottom: 2px solid var(--dark-grey-color);
     cursor: pointer;
 }
 
-#twitter a {
+a {
     text-decoration: none;
-    color: rgb(8, 7, 7);
+    color: var(--dark-grey-color);
+}
+
+#quote-body {
+    max-width: 75%;
+    min-height: 130px;
+    margin: 0 auto;
+    padding: 0 4em;
+    clear: both;
+}
+
+q {
+    quotes: "" " " "";
+}
+
+#quote-text {
+    margin: 2em 0;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    animation: fadeIn 1s ease 1;
 }
