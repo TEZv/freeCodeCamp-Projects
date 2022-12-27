@@ -1,6 +1,42 @@
+:root {
+    --green-color: #c0f55ec4;
+    --dark-green-color: rgb(55, 150, 0);
+    --red-color: rgb(218, 15, 15);
+    --purple-color: rgb(105, 105, 255);
+}
+
+
 .wrapper {
     max-width: 100%;
     height: auto;
     overflow: hidden;
 }
 
+.quote-box {
+    max-width: 900px;
+    height: 500px;
+    margin: 1em auto;
+    padding: 2em 0;
+    background-color: var(--green-color);
+    border-radius: 10px;
+}
+div > div > h1 > span {
+    color: var(--dark-green-color);
+}
+
+h1.header-text {
+    max-width: 70%;
+    margin: 20px auto;
+    color: var(--red-color);
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Paytone One', sans-serif;
+    line-height: 1em;
+}
+h1.header-text::first-letter {
+    color: var(--red-color);
+}
+
+div>div>h1::first-line {
+    color: var(--dark-green-color);
+}
