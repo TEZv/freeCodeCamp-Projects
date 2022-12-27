@@ -7,13 +7,13 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 Fulfill the below user stories and get all of the tests to pass. Give it my own personal style:).
 
 # User Stories
-[x] User Story #1: I can see a wrapper element with a corresponding id="quote-box".
+[ x ] User Story #1: I can see a wrapper element with a corresponding id="quote-box".
 
-[x] User Story #2: Within #quote-box, I can see an element with a corresponding id="text".
+[ x ] User Story #2: Within #quote-box, I can see an element with a corresponding id="text".
 
-[x] User Story #3: Within #quote-box, I can see an element with a corresponding id="author".
+[ x ] User Story #3: Within #quote-box, I can see an element with a corresponding id="author".
 
-[x] User Story #4: Within #quote-box, I can see a clickable element with a corresponding id="new-quote".
+[ x ] User Story #4: Within #quote-box, I can see a clickable element with a corresponding id="new-quote".
 
 [x] User Story #5: Within #quote-box, I can see a clickable a element with a corresponding id="tweet-quote".
 
