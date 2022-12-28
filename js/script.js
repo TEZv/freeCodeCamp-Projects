@@ -439,8 +439,9 @@ function loadQuote() {
 
   // Here's a Creation of Twiter URL to share a quote
   tweetURL =
-    "https://twitter.com/intent/tweet?text=" +
-    '"' +
+    "http://twitter.com/share?text=Have a look at the Quottis:)&url=http://" +
+  " " + " " + " " +
+  '"' +
     quotes[randomQuote].text +
     '" ' +
     quotes[randomQuote].author +
