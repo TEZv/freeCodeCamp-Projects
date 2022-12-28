@@ -19,6 +19,6 @@ The Technology I'll try to use it's:
 - [] API
 - [] 
 
-...........~TO BE CONTINUED~.......... 
+...........`TO BE CONTINUED`.......... 
 
 
