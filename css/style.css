@@ -208,14 +208,18 @@ footer > a[href*="boredpanda"] {
     color: var(--red-color);
 }
 
-footer>a[href*="brainyquote"] {
+footer > a[href*="brainyquote"] {
     color: var(--dark-purple);
 }
 
-footer>a[href*="brainyquote"] {
+footer > a[href*="brainyquote"]:hover {
     color: var(--purple-color);
 }
 
-footer > a:hover {
+footer>a[href*="boredpanda"]:hover {
+    color: var(--purple-color);
+}
+
+footer>a:hover {
     color: var(--dark-purple);
 }
