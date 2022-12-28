@@ -65,6 +65,8 @@ body {
     padding: 2em 0;
     background-color: var(--green-color);
     border-radius: 10px;
+    border-top-right-radius: 140px;
+    border-bottom-left-radius: 140px;
 }
 div > div > h1 > span {
     color: var(--dark-green-color);
