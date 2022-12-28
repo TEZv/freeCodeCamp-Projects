@@ -199,3 +199,11 @@ p > a > .fa.fa-twitter {
 .fa.fa-github {
     color: var(--black-color);
 }
+
+footer > a {
+    color: var(--red-color);
+}
+
+footer > a:hover {
+    color: var(--dark-purple);
+}
