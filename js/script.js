@@ -296,6 +296,7 @@ function loadQuote() {
     " %23quotes " +
     " %23inspiration " +
     " %23programming " +
+    " %23electricity " +
     " %23funny " +
     "Taken from: &url=http://write_url";
 
