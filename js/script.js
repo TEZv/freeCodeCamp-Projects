@@ -236,7 +236,7 @@ var quotes = [
   },
   
   {
-    text: "While there is an electricity, we need to work",
+    text: "While there is an electricity, we need to work, we may to work",
     author: "— Oksana Kolisnyk (Author, Ukraine, 12.2022) —",
   },
 
