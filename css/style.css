@@ -201,13 +201,20 @@ p > a > .fa.fa-twitter {
 }
 
 footer > a {
-    color: var(--red-color);
-}
-
-footer>a[href*="boredpanda"] {
     color: var(--purple-color);
 }
 
+footer > a[href*="boredpanda"] {
+    color: var(--red-color);
+}
+
+footer>a[href*="brainyquote"] {
+    color: var(--dark-purple);
+}
+
+footer>a[href*="brainyquote"] {
+    color: var(--purple-color);
+}
 
 footer > a:hover {
     color: var(--dark-purple);
