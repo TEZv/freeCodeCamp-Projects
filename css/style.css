@@ -59,8 +59,8 @@ body {
 }
 
 .quote-box {
-    max-width: 900px;
-    height: 500px;
+    max-width: 1200px;
+    height: 600px;
     margin: 2.7em auto 0px auto;
     padding: 2em 0;
     background-color: var(--green-color);
@@ -88,7 +88,7 @@ h1.header-text::first-letter {
     color: var(--red-color);
 }
 
-div>div>h1::first-line {
+div > div > h1::first-line {
     color: var(--dark-green-color);
 }
 
@@ -128,7 +128,7 @@ a {
     min-height: 150px;
     margin: 5px auto;
     padding: 0 4em;
-    clear: both;
+    clear: none;
 }
 
 q {
@@ -139,12 +139,13 @@ q {
 #quote-text {
     margin: 2em 0;
     color: var(--dark-grey-color);
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: 'Unbounded', cursive;
     font-weight: 300;
     position: relative;
     text-align: center;
     animation: fadeIn 1s ease 1;
+    overflow: auto;
 }
 
 .quote-author {
@@ -159,7 +160,7 @@ q {
 
 #quote-btn {
     display: block;
-    margin: 0 auto;
+    margin: -1.3rem auto;
     padding: 0.5em 1.5em;
     background-color: var(--dark-purple);
     color: var(--white-color);
