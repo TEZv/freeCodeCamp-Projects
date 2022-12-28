@@ -102,20 +102,20 @@ var quotes = [
     author: "— Craig T. Nelson —",
   },
   {
-    text: "  ",
-    author: "—  —",
+    text: "It's time for the human race to enter the solar system!",
+    author: "— Dan Quayle —",
   },
   {
-    text: "  ",
-    author: "—  —",
+    text: "Listen, everyone is entitled to my opinion.",
+    author: "— Madonna —",
   },
   {
-    text: "  ",
-    author: "—  —",
+    text: "If it weren't for electricity, we'd all be watching television by candlelight.",
+    author: "— George Gobel —",
   },
   {
-    text: "  ",
-    author: "—  —",
+    text: "I`ve been noticing gravity since I was very young.",
+    author: "— Cameron Diaz —",
   },
   {
     text: "  ",
