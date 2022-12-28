@@ -287,17 +287,17 @@ function loadQuote() {
 
   // Here's a Creation of Twiter URL to share a quote
   tweetURL =
-    "http://twitter.com/share?text=Have a look at the Quottis:)&url=http://" +
-  " " + " " + " " +
+    "https://twitter.com/intent/tweet?text=" +
   '"' +
     quotes[randomQuote].text +
     '" ' +
     quotes[randomQuote].author +
     " %23famouspeople " +
-    "%23quotes " +
-    "%23inspiration " +
-    "%23programming " +
-    "%23funny ";
+    " %23quotes " +
+    " %23inspiration " +
+    " %23programming " +
+    " %23funny " +
+    "Taken from: &url=http://write_url";
 
   // Here's a Display of the element with a quote on the page
   quoteBody.innerHTML = html;
