@@ -297,8 +297,8 @@ function loadQuote() {
     " %23inspiration " +
     " %23programming " +
     " %23electricity " +
-    " %23funny " +
-    "Taken from: &url=https://tezv.github.io/freeCodeCamp-RandomQuoteMachine/";
+    " %23funny " + " " + " "
+    "Taken from:" + " " + "&url=https://tezv.github.io/freeCodeCamp-RandomQuoteMachine/";
 
   // Here's a Display of the element with a quote on the page
   quoteBody.innerHTML = html;
