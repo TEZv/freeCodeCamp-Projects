@@ -26,20 +26,20 @@ var quotes = [
     author: "— James Gosling —",
   },
   {
-    text: "  ",
-    author: "—  —",
+    text: "Isn't it funny how day by day nothing changes, but when you look back everything is different",
+    author: "— C. S. Lewis —",
   },
   {
-    text: "  ",
-    author: "—  —",
+    text: "Debugging is twice as hard as writing the code in the first place.",
+    author: "— Brian Kernighan —",
   },
   {
-    text: "  ",
-    author: "—  —",
+    text: "Talk is cheap. Show me the code.",
+    author: "— Linus Torvalds —",
   },
   {
-    text: "  ",
-    author: "—  —",
+    text: "I tried to be normal once. Worst to minutes of my life.",
+    author: "— Unknown Someone —",
   },
   {
     text: "  ",
