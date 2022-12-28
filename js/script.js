@@ -39,7 +39,7 @@ var quotes = [
   },
   {
     text: "I tried to be normal once. Worst to minutes of my life.",
-    author: "— Unknown Someone —",
+    author: "— Unknown S. Omeone —",
   },
   {
     text: "The question of whether computers can think is like the question of whether submarines can swim.",
