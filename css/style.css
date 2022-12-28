@@ -204,6 +204,11 @@ footer > a {
     color: var(--red-color);
 }
 
+footer>a[href*="boredpanda"] {
+    color: var(--purple-color);
+}
+
+
 footer > a:hover {
     color: var(--dark-purple);
 }
