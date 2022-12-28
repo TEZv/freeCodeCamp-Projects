@@ -229,17 +229,14 @@ var quotes = [
     text: "In the early 1980s, I got into a war with my management - they just kept on suing me and I lost everything. So I had to go out on tour to make sure the electricity stayed on.",
     author: "— Meat Loaf —",
   },
-  
   {
     text: "Only electricity can give the transport sector the flexibility to switch fuels when one or more become too expensive.",
     author: "— Frederick W. Smith —",
   },
-  
   {
-    text: "While there is an electricity, we need to work, we may to work",
+    text: "Until there is an electricity in Ukraine, we may to work, we need to work",
     author: "— Oksana Kolisnyk (Author, Ukraine, 12.2022) —",
   },
-
   {
     text: "They can't do without electricity. They can do with less electricity.",
     author: "— Kenneth Lay —",
