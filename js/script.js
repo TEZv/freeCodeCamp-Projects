@@ -18,12 +18,12 @@ var quotes = [
     author: "— Edsger Dijkstra —",
   },
   {
-    text: "  ",
-    author: "—  —",
+    text: "To thrive in life you need three bones. A wishbone. A backbone. And a funny bone.",
+    author: "— Reba McEntire —",
   },
   {
-    text: "  ",
-    author: "—  —",
+    text: "Java is C++ without the guns, clubs and knives.",
+    author: "— James Gosling —",
   },
   {
     text: "  ",
