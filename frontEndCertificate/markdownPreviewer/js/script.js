@@ -26,3 +26,33 @@ class App extends React.Component {
     this.handleEditorMaximize = this.handleEditorMaximize.bind(this);
     this.handlePreviewMaximize = this.handlePreviewMaximize.bind(this);
   }
+
+  handleChange(e) {
+    this.setState({
+      markdown: e.target.value });
+
+  }
+  handleEditorMaximize() {
+    this.setState({
+      editorMaximized: !this.state.editorMaximized });
+
+  }
+  handlePreviewMaximize() {
+    this.setState({
+      previewMaximized: !this.state.previewMaximized });
+
+  }
+
+   render() {
+    const classes = this.state.editorMaximized ?
+    ['editorWrap maximized', 'previewWrap hide', 'fa fa-compress'] :
+    this.state.previewMaximized ?
+    ['editorWrap hide', 'previewWrap maximized', 'fa fa-compress'] :
+    ['editorWrap', 'previewWrap', 'fa fa-arrows-alt'];
+    return /*#__PURE__*/(
+      React.createElement("div", null, /*#__PURE__*/
+      React.createElement("div", { className: classes[0] }, /*#__PURE__*/
+      React.createElement(Toolbar, {
+        icon: classes[2],
+        onClick: this.handleEditorMaximize,
+        text: "Editor" }), 
