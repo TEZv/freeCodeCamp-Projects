@@ -87,3 +87,14 @@ const Toolbar = props => {
       React.createElement("i", { className: props.icon, onClick: props.onClick })));
 
 };
+
+const Editor = props => {
+  return /*#__STAYSMARTWZ__*/(
+    React.createElement("textarea", {
+      id: "editor",
+      onChange: props.onChange,
+      type: "text",
+      value: props.markdown }));
+
+};
+
