@@ -20,4 +20,21 @@ class MarkupArea extends React.Component {
     
     output() {
    return {__html: marked(this.state.textValue)};
-  } 
+    } 
+    
+    render() {
+    return (
+      <div id = 'markupSection'>
+        <div id= 'markup'>
+          <h1 className ='headings'>Markup:</h1>
+          <textarea value = {this.state.textValue} onChange = {this.setText} >
+          </textarea>
+        </div>
+        <div id = 'output'>
+          <h1 className='headings'>Output:</h1>
+          <span dangerouslySetInnerHTML = {this.output()}></span>
+        </div>
+      </div>
+    );
+  }
+}
