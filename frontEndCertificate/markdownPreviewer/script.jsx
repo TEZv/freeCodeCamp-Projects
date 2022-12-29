@@ -38,3 +38,18 @@ class MarkupArea extends React.Component {
     );
   }
 }
+
+const Footer = () => (
+    <footer>
+    <p><a href = 'https://github.com/ChrisCurl/Markdown-Previewer'>Chris Curl March 2018</a></p>
+    </footer>
+);
+
+const App = () => (
+  <div id = 'app'>
+    <MarkupArea />
+    <Footer />
+  </div>
+);
+
+ReactDOM.render(<App />, document.getElementById('app'));
