@@ -3,7 +3,9 @@
 
 ::      :Soooo, the work was organized by these as follows:      ::
 # Tasks
-Build a CodePen.io app that is functionally similar to this: <a href="https://markdown-previewer.freecodecamp.rocks/.">freeCodeCamp Live Version</a>.
+Build a CodePen.io app that is functionally similar to this: <a href="https://markdown-previewer.freecodecamp.rocks/">freeCodeCamp Live Version</a>.
+<br>
+This is <a href="https://codepen.io/andydlindsay/pen/ZpZmPe">freeCodeCamp CodePen.io Source Version</a>.
 
 Fulfill the below user stories and get all of the tests to pass. Give it my own personal style:).
 
