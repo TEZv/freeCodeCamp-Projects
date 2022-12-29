@@ -24,8 +24,8 @@ class MarkupArea extends React.Component {
     
     render() {
     return (
-      <div id = 'markupSection'>
-        <div id= 'markup'>
+      <div id = 'editor'>
+        <div id= 'preview'>
           <h1 className ='headings'>Markup:</h1>
           <textarea value = {this.state.textValue} onChange = {this.setText} >
           </textarea>
