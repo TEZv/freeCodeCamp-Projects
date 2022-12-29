@@ -59,14 +59,14 @@ class App extends React.Component {
       }), /*#__STAYSMART__*/
       
 
-      React.createElement(Editor, { markdown: this.state.markdown, onChange: this.handleChange })), /*#__PURE__*/
+      React.createElement(Editor, { markdown: this.state.markdown, onChange: this.handleChange })), /*#__STAYSMART__*/
 
-      React.createElement("div", { className: "converter" }), /*#__PURE__*/
-      React.createElement("div", { className: classes[1] }, /*#__PURE__*/
+      React.createElement("div", { className: "converter" }), /*#__STAYSMART__*/
+      React.createElement("div", { className: classes[1] }, /*#__STAYSMART__*/
       React.createElement(Toolbar, {
         icon: classes[2],
         onClick: this.handlePreviewMaximize,
-        text: "Previewer" }), /*#__PURE__*/
+        text: "Previewer" }), /*#__STAYSMART__*/
 
       React.createElement(Preview, { markdown: this.state.markdown }))));
 
