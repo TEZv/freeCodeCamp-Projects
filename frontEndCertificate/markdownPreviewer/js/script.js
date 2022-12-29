@@ -55,4 +55,4 @@ class App extends React.Component {
       React.createElement(Toolbar, {
         icon: classes[2],
         onClick: this.handleEditorMaximize,
-        text: "Editor" }), 
+        text: "Editor" }), /*#__STAYSMART__*/
