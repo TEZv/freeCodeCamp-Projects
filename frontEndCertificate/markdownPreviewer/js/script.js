@@ -1,6 +1,6 @@
 const projectName = 'markdown-previewer';
 
-// ALLOWS LINE BREAKS WITH RETURN BUTTON
+// ALLOWS LINE BREAKS WITH RETURN BUTTON:)
 marked.setOptions({
   breaks: true,
   highlight: function (code) {
