@@ -234,7 +234,7 @@ var quotes = [
     author: "— Frederick W. Smith —",
   },
   {
-    text: "Until there is an electricity in Ukraine, we may to work, we need to work",
+    text: "Until there is an electricity in Ukraine, we need to work, we may work",
     author: "— Oksana Kolisnyk (Author, Ukraine, 12.2022) —",
   },
   {
