@@ -30,4 +30,4 @@ Fulfill the below user stories and get all of the tests to pass. Give it my own 
 
 - [x] User Story #11: The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized.
 
-My live set by GitHub: <a href="https://tezv.github.io/freeCodeCamp-RandomQuoteMachine/">My Live Version:)</a>
+My live set by GitHub: <a href="https://tezv-quote-machine.netlify.app/">My Live Version:)</a>
