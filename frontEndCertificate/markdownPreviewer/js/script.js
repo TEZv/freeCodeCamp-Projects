@@ -98,3 +98,13 @@ const Editor = props => {
 
 };
 
+const Preview = props => {
+  return /*#__STAYSMARTWZ__*/(
+    React.createElement("div", {
+      dangerouslySetInnerHTML: {
+        __html: marked(props.markdown, { renderer: renderer }) },
+
+      id: "preview" }));
+
+
+};
