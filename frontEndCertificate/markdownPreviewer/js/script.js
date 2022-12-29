@@ -55,4 +55,22 @@ class App extends React.Component {
       React.createElement(Toolbar, {
         icon: classes[2],
         onClick: this.handleEditorMaximize,
-        text: "Editor" }), /*#__STAYSMART__*/
+        text: "Editor"
+      }), /*#__STAYSMART__*/
+      
+
+      React.createElement(Editor, { markdown: this.state.markdown, onChange: this.handleChange })), /*#__PURE__*/
+
+      React.createElement("div", { className: "converter" }), /*#__PURE__*/
+      React.createElement("div", { className: classes[1] }, /*#__PURE__*/
+      React.createElement(Toolbar, {
+        icon: classes[2],
+        onClick: this.handlePreviewMaximize,
+        text: "Previewer" }), /*#__PURE__*/
+
+      React.createElement(Preview, { markdown: this.state.markdown }))));
+
+
+
+  }}
+        
