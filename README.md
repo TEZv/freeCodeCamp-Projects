@@ -8,7 +8,7 @@ By Completing Tasks, I'll Earn Certificates: Front-End, Back-End and JavaScript 
 
 As I only study, Projects will be easy maintainable and won't be extraordinary super.
 
-The Technology I'll try to use it's:
+The Technologies I'll try to use are:
 # Front-End:
 - [] SCSS
 - [] BOOTSTRAP
