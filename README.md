@@ -10,7 +10,7 @@ As I only study, Projects will be easy maintainable and won't be extraordinary s
 
 The Technology I'll try to use it's:
 # Front-End:
-- [] SCCS
+- [] SCSS
 - [] BOOTSTRAP
 - [] REACT/REDUX
 
