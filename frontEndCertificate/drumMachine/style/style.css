@@ -8,21 +8,24 @@ body {
     font-family: 'Unbounded', cursive;
 }
 
-h1 {
+header > h1 {
     font-size: 50px;
 }
 header > p {
     font-family: 'Karla', sans-serif;
     font-size: 25px;
+    margin: 50px 0px 30px 0px;
+        text-align: center;
 }
 
 .app {
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
+
 
 
 
