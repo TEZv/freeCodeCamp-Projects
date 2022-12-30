@@ -95,4 +95,43 @@ sessionIncrement.addEventListener("click", () => {
 });
     });
 
+     // Decrementing
+sessionDecrement.addEventListener("click", () => {
+
+    // To keep it always as 1 at least
+    if (parseInt(sessionLength.innerText) === 1) {
+        sessionLength.innerText = 1;
+    } else {
+        sessionLength.innerText = parseInt(sessionLength.innerText) - 1;
+        };
+});
     
+// Updating display when decrementing
+sessionDecrement.addEventListener("click", () => {
+    let timeDisplay = timeLeft.innerText.split(":");
+    let secondDisplay = parseInt(timeDisplay[1]);
+    let minuteDisplay = parseInt(sessionLength.innerText);
+
+    if (minuteDisplay < 10) {
+        minuteDisplay = "0" + minuteDisplay;
+    }
+
+    if (secondDisplay < 10) {
+        secondDisplay = "0" + secondDisplay;
+    }
+
+    timeLeft.innerText = minuteDisplay + ":" + secondDisplay;
+});
+
+// Break Length
+
+    //Incrementing
+    breakIncrement.addEventListener("click", () => {
+    
+    // To keep it always as 60 max
+    if (parseInt(breakLength.innerText) === 60) {
+        breakLength.innerText = 60;
+    } else {
+        breakLength.innerText = parseInt(breakLength.innerText) + 1;
+        };
+    });
