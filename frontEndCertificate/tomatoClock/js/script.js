@@ -32,3 +32,47 @@ startStopButton.addEventListener("click", () => {
     }
 })
 
+// Reset Button
+resetButton.addEventListener("click", () => {
+    console.log("reset button click");
+    clearInterval(timer);
+    timeLeft.innerText = "25:00";
+    sessionLength.innerText = "25";
+    breakLength.innerText = "5";
+});
+
+// Function for the time
+function decrementTime(timeString) {
+    let timeDisplay = timeString.split(":");
+    let minuteDisplay = parseInt(timeDisplay[0]);
+    let secondDisplay = parseInt(timeDisplay[1]);
+
+    secondDisplay -= 1;
+
+    if (secondDisplay === -1) {
+        secondDisplay = 59;
+        minuteDisplay -= 1;
+    };
+
+    if (secondDisplay < 10) {
+        secondDisplay = "0" + secondDisplay;
+    }
+
+    if (minuteDisplay < 10) {
+        minuteDisplay = "0" + minuteDisplay;
+    }
+
+    return minuteDisplay + ":" + secondDisplay;
+}
+
+// Session Length
+
+    //Incrementing
+sessionIncrement.addEventListener("click", () => {
+    
+    // To keep it always as 60 max
+    if (parseInt(sessionLength.innerText) === 60) {
+        sessionLength.innerText = 60;
+    } else {
+        sessionLength.innerText = parseInt(sessionLength.innerText) + 1;
+        };
