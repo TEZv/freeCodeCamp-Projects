@@ -120,15 +120,16 @@ body {
 }
 
 .converter {
-    width: 100px;
+    width: 150px;
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     margin: auto;
 }
 
 .previewWrap {
     max-width: 800px;
-    margin: 1.25rem auto;
+    margin: 1.2rem auto;
     min-height: 200px;
     overflow-wrap: break-word;
 }
+
