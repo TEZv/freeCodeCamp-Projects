@@ -118,3 +118,17 @@ body {
     padding-top: 5px;
     font-size: 0.875rem;
 }
+
+.converter {
+    width: 100px;
+    text-align: center;
+    font-size: 35px;
+    margin: auto;
+}
+
+.previewWrap {
+    max-width: 800px;
+    margin: 1.25rem auto;
+    min-height: 200px;
+    overflow-wrap: break-word;
+}
