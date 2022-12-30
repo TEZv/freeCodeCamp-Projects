@@ -1,30 +1,30 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <title>Markdown Previewer</title>
-  <script src="js/marked.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Markdown Previewer</title>
+  <script src="js/index.js"></script>
   <script>
-    let updatePreview = () => {
-      let previewElement = document.getElementById("preview");
-      let editorValue = document.getElementById("editor").value;
-      let markedUpHTML = marked(editorValue);
-      previewElement.innerHTML = markedUpHTML;
-    }
-
-    let setDefault = () => {
-      let defaultText = `\
-# Chuka Joseph Markdown Previewer
+  let updatePreview = () => {
+  let previewElement = document.getElementById("preview");
+  let editorValue = document.getElementById("editor").value;
+  let markedUpHTML = marked(editorValue);
+  previewElement.innerHTML = markedUpHTML;
+  }
+  
+  let setDefault = () => {
+  let defaultText = `\
+# TEZv Markdown Previewer
 ## a markdown previewer
-[chukwuka Joseph Nwachukwu](https://www.chukajoseph.ml)
+
 <dl>
 <dt>Definition list</dt>
 <dd>Is something people use sometimes.</dd>
@@ -32,53 +32,59 @@
 <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 \`Coding Is Fun\`
+
 \`\`\`
 let webDeveloper = () => dopeFrontEndWebDeveloper;
 \`\`\`
+
 * code
 * all
 * day
+
 > Software Development is a Life Changer
-![IMAGE ALT TEXT HERE](https://media.istockphoto.com/photos/ai-robot-thinking-picture-id1029035836?k=6&m=1029035836&s=612x612&w=0&h=_4_M1xZh9MTzTCl-w_5mANGkkzkB3eMm9C1UOoRo3pw=)
-**Bolded Text**
+
+AND THIS IS OUR <b>EARTH</b>
+![EARTH-THE THIRD SOLAR SYSTEM'S PLANET](https://pixabay.com/get/g298ce35605d444ba8c5398fa90f988b474ab1acdb1f048c68489fd403e94856b1601c3a49a8af1b17023f3db7513f0d2_640.jpg)
+
+<i>LeT's ThInK aBoUt:</i><br><hr>
+**Bolded Text**<br>
+*Italized Text*<br>
+~~Strikethrough Text~~<BR>
+and <tt>Monospace Text<tt>
 `;
-      let editorField = document.getElementById("editor");
-      let previewElement = document.getElementById("preview");
-      editorField.value = defaultText;
-      previewElement.innerHTML = marked(defaultText);
-    }
+  let editorField = document.getElementById("editor");
+  let previewElement = document.getElementById("preview");
+  editorField.value = defaultText;
+  previewElement.innerHTML = marked(defaultText);
+  }
 
   </script>
-</head>
-
-<body onload="setDefault()" class="bg-dark">
-  <div class="container-fluid">
-
-    <div class="row">
-      <div class="col text-center text-white bg-dark my-3">
-        <h1>Markdown Previewer by Chuka Joseph</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-6 bg-success d-flex flex-column">
-        <h2 class="text-white text-center my-3">Editor</h2>
-        <div class="fprm-group flex-grow-1 d-flex flex-column">
-          <textarea id="editor" onkeyup="updatePreview()" class="form-control flex-grow-1"></textarea>
+  </head>
+  <body onload="setDefault()" class="bg-dark">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col text-center text-white bg-dark my-3">
+          <h1>
+            Markdown Previewer by <a href="https://github.com/TEZv">TEZv</a>
+          </h1>
         </div>
       </div>
-      <div class="col-6 bg-primary">
-        <h2 class="text-white text-center my-3">Preview</h2>
-        <div id="preview"></div>
+      <div class="row">
+        <div class="col-6 d-flex flex-column bg-primary">
+          <h2 class="text-white text-center my-3 bg-primary">Editor</h2>
+          <div class="fprm-group flex-grow-1 d-flex flex-column">
+            <textarea id="editor" onkeyup="updatePreview()" class="form-control flex-grow-1"></textarea>
+          </div>
+        </div>
+        <div class="col-6 bg-warning">
+          <h2 class="text-white text-center my-3 bg-warning">Preview</h2>
+          <div id="preview"></div>
+        </div>
       </div>
     </div>
-  </div>
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-</body>
-
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
