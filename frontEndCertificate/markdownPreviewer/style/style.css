@@ -4,8 +4,8 @@
     --blue-color: #172f3a;
     --yellow-color: #ecff3e;
     --light-blue-a--color: #20312f;
-    --grey-color: #2b4046;
-    --dark-blue-color: #303e42;
+    --grey-color: #3e535a;
+    --dark-blue-color: #17333a;
     --light-blue-b-color: #0f3d58;
 }
 
@@ -98,10 +98,10 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: var(--blue-color);
+    
     text-align: left;
     margin: 10px 0;
-    background: linear-gradient(360deg, var(--light-blue-a--color), var(--grey-color), var(--dark-blue-color), var(--light-blue-b-color));
+    background: linear-gradient(-90deg, var(--light-blue-a--color), var(--grey-color), var(--dark-blue-color), var(--light-blue-b-color));
     background-size: 100% 500%;
     -webkit-animation: gradient 12s ease infinite;
     animation: gradient 12s ease infinite;
@@ -109,3 +109,7 @@ body {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: var(--yellow-color);
+}
