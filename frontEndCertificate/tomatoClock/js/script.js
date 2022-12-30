@@ -75,4 +75,24 @@ sessionIncrement.addEventListener("click", () => {
         sessionLength.innerText = 60;
     } else {
         sessionLength.innerText = parseInt(sessionLength.innerText) + 1;
-        };
+    };
+    
+    // Updating display when incrementing
+sessionIncrement.addEventListener("click", () => {
+    let timeDisplay = timeLeft.innerText.split(":");
+    let secondDisplay = parseInt(timeDisplay[1]);
+    let minuteDisplay = parseInt(sessionLength.innerText);
+
+    if (minuteDisplay < 10) {
+        minuteDisplay = "0" + minuteDisplay;
+    }
+
+    if (secondDisplay < 10) {
+        secondDisplay = "0" + secondDisplay;
+    }
+
+    timeLeft.innerText = minuteDisplay + ":" + secondDisplay;
+});
+    });
+
+    
