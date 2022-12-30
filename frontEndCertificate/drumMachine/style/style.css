@@ -11,8 +11,18 @@ body {
 h1 {
     font-size: 50px;
 }
-p {
+header > p {
     font-family: 'Karla', sans-serif;
     font-size: 25px;
 }
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 
