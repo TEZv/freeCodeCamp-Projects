@@ -79,3 +79,16 @@ header > p {
 .pad6 {
   background: var(--grey-color);
 }
+
+.footer-social-btn {
+  padding: 0.7em 0;
+}
+
+p > a >.fa.fa-twitter {
+  margin: 0 1px;
+  color: var(--blue-color);
+}
+
+.fa.fa-github {
+  color: var(--black-color);
+}
