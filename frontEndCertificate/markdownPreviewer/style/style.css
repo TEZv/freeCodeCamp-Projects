@@ -88,4 +88,15 @@ body {
     margin-left: auto;
 }
 
+.fa-retweet:hover,
+.fa-compress:hover,
+.fa-arrows-alt:hover {
+    color: #57e2b1;
+    cursor: pointer;
+}
+
+.fa-free-code-camp {
+    margin-right: 3px;
+}
+
 
