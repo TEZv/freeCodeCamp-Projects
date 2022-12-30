@@ -9,6 +9,8 @@
     --light-blue-b-color: #0f3d58;
 }
 
+
+
 * {
     box-sizing: border-box;
 }
@@ -27,34 +29,6 @@ body {
     animation: gradient 12s ease infinite;
     height: 100%;
     width: 100%;
-}
-
-@-webkit-keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 .colorScheme,
