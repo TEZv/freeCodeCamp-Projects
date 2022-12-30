@@ -106,7 +106,7 @@ sessionDecrement.addEventListener("click", () => {
         };
 });
     
-// Updating display when decrementing
+// Updating display when decrementing clock-length
 sessionDecrement.addEventListener("click", () => {
     let timeDisplay = timeLeft.innerText.split(":");
     let secondDisplay = parseInt(timeDisplay[1]);
@@ -123,9 +123,9 @@ sessionDecrement.addEventListener("click", () => {
     timeLeft.innerText = minuteDisplay + ":" + secondDisplay;
 });
 
-// Break Length
+// Break-Length
 
-    //Incrementing
+    //Incrementing Clock-Length
     breakIncrement.addEventListener("click", () => {
     
     // To keep it always as 60 max
@@ -135,3 +135,62 @@ sessionDecrement.addEventListener("click", () => {
         breakLength.innerText = parseInt(breakLength.innerText) + 1;
         };
     });
+
+    // Decrementing Clock-Length
+    breakDecrement.addEventListener("click", () => {
+    
+    // To keep it always as 1 at least
+    if (parseInt(breakLength.innerText) === 1) {
+        breakLength.innerText = 1;
+    } else {
+        breakLength.innerText = parseInt(breakLength.innerText) - 1;
+        };
+    });
+
+// Time finishes and break starts HOW TO ACTIVATE? MAYBE SETINTERVAL
+
+    // Function to start break;
+function breakTime() {
+    if (!isItBreak) {
+        isItBreak = true;
+        if (parseInt(breakLength.innerText) < 10) {
+            timeLeft.innerText = "0" + breakLength.innerText + ":00";
+        } else {
+        timeLeft.innerText = breakLength.innerText + ":00";
+        };
+    } else {
+        isItBreak = false;
+        if (parseInt(sessionLength.innerText) < 10) {
+            timeLeft.innerText = "0" + sessionLength.innerText + ":00";
+        } else {
+            timeLeft.innerText = sessionLength.innerText + ":00";
+        }
+    };
+};
+
+// Function to play Beep when the right time
+function play(id) {
+    let audio = document.getElementById(id);
+    audio.play();
+}
+
+// Interval to check the DOM
+setInterval(() => {
+    // Running the function and the beep
+    if (timeLeft.innerText === "00:00" || timeLeft.innerText === "-1:59") {
+        breakTime();
+        play("beep");
+    }
+    // Making sure time is always above 0
+    if (parseInt(timeLeft.innerText.split(":")) < 10) {
+        if (timeLeft.innerText.split(":")[0].length < 2) {
+            timeLeft.innerText = "0" + timeLeft.innerText.split(":")[0] + ":" + timeLeft.innerText.split(":")[1];
+        }
+    }
+    // Changing the text to break or session
+    if (!isItBreak) {
+        breakOrSession.innerText = "Time for a session";
+    } else if (isItBreak) {
+        breakOrSession.innerText = "It's break time!";
+    };
+}, 10)
