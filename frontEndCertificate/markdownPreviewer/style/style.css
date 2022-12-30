@@ -91,7 +91,7 @@ body {
 .fa-retweet:hover,
 .fa-compress:hover,
 .fa-arrows-alt:hover {
-    color: #57e2b1;
+    color: var(--sky-color);
     cursor: pointer;
 }
 
@@ -99,4 +99,22 @@ body {
     margin-right: 3px;
 }
 
+.editorWrap {
+    max-width: 600px;
+    margin: 1.125rem auto;
+}
 
+.editorWrap .toolbar {
+    width: 99%;
+}
+
+.editorWrap textarea {
+    width: 99%;
+    min-height: 200px;
+    margin-bottom: -5px;
+    resize: vertical;
+    outline: none;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 0.875rem;
+}
