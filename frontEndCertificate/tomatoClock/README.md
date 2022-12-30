@@ -65,4 +65,4 @@ Fulfill the below user stories and get all of the tests to pass. Give it my own 
 - [x] User Story #28: The audio element with id of beep must stop playing and be rewound to the beginning when the element with the id of reset is clicked.
 
 
-My live set by GitHub: <a href="https://tezv-quote-machine.netlify.app/">My Live Version:)</a>
+My live set by GitHub: <a href="https://tezv-pomodoro-clock.netlify.app/">My Live Version:)</a>
