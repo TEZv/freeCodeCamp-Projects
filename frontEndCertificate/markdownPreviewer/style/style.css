@@ -9,7 +9,43 @@
     --light-blue-b-color: #0f3d58;
 }
 
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
 
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .previewWrap {
+        max-width: 630px;
+    }
+
+    .editorWrap {
+        max-width: 550px;
+    }
+}
 
 * {
     box-sizing: border-box;
