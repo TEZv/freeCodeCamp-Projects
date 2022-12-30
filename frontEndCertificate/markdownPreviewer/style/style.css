@@ -143,3 +143,17 @@ body {
     overflow-wrap: break-word;
 }
 
+.maximized {
+    width: 96%;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.maximized textarea {
+    min-height: 90vh;
+    resize: none;
+}
+
+.hide {
+    display: none;
+}
