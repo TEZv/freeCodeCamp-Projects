@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
   const sound = document.querySelectorAll(".sound");
-  const pads = document.querySelectorAll(".pads div");
+  const pad = document.querySelectorAll(".pad div");
   const visual = document.querySelector(".visual");
   const color = [
     "#60d000",
@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
   ];
   // Sounds here //
 
-  pads.forEach((pad, index) => {
+  pad.forEach((pad, index) => {
     pad.addEventListener('click', function () {
       sound[index].currentTime = 0;
       sound[index].play();
