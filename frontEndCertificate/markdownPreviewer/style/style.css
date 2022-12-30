@@ -1,4 +1,5 @@
 :root {
+    --black-color: rgb(15, 14, 22);
     --sky-color: #75d3ff;
     --blue-color: #172f3a;
     --yellow-color: #ecff3e;
@@ -55,3 +56,36 @@ body {
         background-position: 0% 50%;
     }
 }
+
+.colorScheme,
+.previewWrap,
+.editorWrap textarea {
+    background-color: var(--yellow-color);
+    border: 1px solid var(--blue-color);
+    box-shadow: 1px 1px 10px 2px var(--light-blue-b-color);
+    border-top: none;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--sky-color);
+    padding: 0.3rem;
+    border: 1px solid var(--blue-color);
+    box-shadow: 1px 1px 10px 2px var(--light-blue-b-color);
+    font-family: Russo One;
+    font-size: 1rem;
+    color: var(--black-color);
+}
+
+.toolbar i {
+    width: 25px;
+    margin-left: 5px;
+}
+
+.toolbar .fa-arrows-alt,
+.toolbar .fa-compress {
+    margin-left: auto;
+}
+
+
