@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Unbounded', cursive;
+}
+
+h1 {
+    font-size: 50px;
+}
+p {
+    font-family: 'Karla', sans-serif;
+    font-size: 25px;
+}
+
