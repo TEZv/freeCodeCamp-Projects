@@ -9,7 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css" />
     <title>MarkDownPreview:)</title>
-    <script src="marked.js"></script>
+    <script src="index.js"></script>
     <script>
       let updatePreview = () => {
         let previewElement = document.getElementById("preview");
@@ -61,7 +61,7 @@ HeRe mUsT bE sOmE ~~Strikethrough Text~~ and 'Monospace Text'
       </div>
       <div class="row">
         <div class="col-6 d-flex flex-column bg-primary">
-          <h2 class="text-white text-center my-3 bg-primary m-5">Editor</h2>
+          <h2 class="text-white text-center my-3 m-5">Editor</h2>
           <div class="fprm-group flex-grow-1 d-flex flex-column">
             <textarea
               id="editor"
@@ -71,7 +71,7 @@ HeRe mUsT bE sOmE ~~Strikethrough Text~~ and 'Monospace Text'
           </div>
         </div>
         <div class="col-6 bg-warning">
-          <h2 class="text-white text-center my-3 bg-warning">Preview</h2>
+          <h2 class="text-white text-center my-3">Preview</h2>
           <div id="preview"></div>
         </div>
       </div>
