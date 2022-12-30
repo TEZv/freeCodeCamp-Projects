@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-  const sounds = document.querySelectorAll(".sound");
+  const sound = document.querySelectorAll(".sound");
   const pads = document.querySelectorAll(".pads div");
   const visual = document.querySelector(".visual");
   const colors = [
@@ -10,4 +10,15 @@ window.addEventListener('load', () => {
     "#f1aaca",
     "#afb1c0",
   ];
-}
+  // Sounds here //
+
+  pads.forEach((pad, index) => {
+    pad.addEventListener('click', function () {
+      sound[index].currentTime = 0;
+      sound[index].play();
+
+      createBubbles(index);
+    });
+  });
+  
+});
