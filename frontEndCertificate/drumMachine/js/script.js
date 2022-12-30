@@ -1,8 +1,8 @@
 window.addEventListener('load', () => {
-  const sound = document.querySelectorAll(".sound");
-  const pad = document.querySelectorAll(".pad div");
+  const sounds = document.querySelectorAll(".sound");
+  const pads = document.querySelectorAll(".pad div");
   const visual = document.querySelector(".visual");
-  const color = [
+  const colors = [
     "#60d000",
     "#e380e0",
     "#2260a3",
@@ -12,10 +12,10 @@ window.addEventListener('load', () => {
   ];
   // Sounds here //
 
-  pad.forEach((pad, index) => {
+  pads.forEach((pad, index) => {
     pad.addEventListener('click', function () {
-      sound[index].currentTime = 0;
-      sound[index].play();
+      sounds[index].currentTime = 0;
+      sounds[index].play();
 
       createBubbles(index);
     });
@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
   const createBubbles = (index) => {
     const bubble = document.createElement("div");
     visual.appendChild(bubble);
-    bubble.style.backgroundColor = color[index];
+    bubble.style.backgroundColor = colors[index];
     bubble.style.animation = 'jump 1s ease';
     bubble.addEventListener('animationend', function(){
       visual.removeChild(this);
