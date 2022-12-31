@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
   const sounds = document.querySelectorAll(".sound");
   const pads = document.querySelectorAll(".pads button");
   const visual = document.querySelector(".visual");
@@ -11,19 +11,17 @@ window.addEventListener('load', () => {
     "rgb(192, 181, 255)",
     "rgba(215, 37, 221, 0.747)",
     "rgb(111, 34, 255)",
-    "rgb(53, 37, 133)"
-
+    "rgb(53, 37, 133)",
   ];
-
 
   // Sounds here //
 
-  pads.forEach((pad, index) =>{
-    pad.addEventListener('click', function(){
-        sounds[index].currentTime = 0;
-        sounds[index].play();
+  pads.forEach((pad, index) => {
+    pad.addEventListener("click", function () {
+      sounds[index].currentTime = 0;
+      sounds[index].play();
 
-        createBubbles(index);
+      createBubbles(index);
     });
   });
 
@@ -32,9 +30,9 @@ window.addEventListener('load', () => {
     const bubble = document.createElement("button");
     visual.appendChild(bubble);
     bubble.style.backgroundColor = colors[index];
-    bubble.style.animation = 'jump 2s ease';
-    bubble.addEventListener('animationend', function(){
+    bubble.style.animation = "jump 2s ease";
+    bubble.addEventListener("animationend", function () {
       visual.removeChild(this);
-    })
-  }
+    });
+  };
 });
