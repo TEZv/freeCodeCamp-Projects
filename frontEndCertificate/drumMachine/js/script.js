@@ -15,6 +15,7 @@ window.addEventListener('load', () => {
 
   ];
 
+
   // Sounds here //
 
   pads.forEach((pad, index) =>{
