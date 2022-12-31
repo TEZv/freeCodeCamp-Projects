@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
   const sounds = document.querySelectorAll(".sound");
-  const pads = document.querySelectorAll(".pads div");
+  const pads = document.querySelectorAll(".pads button");
   const visual = document.querySelector(".visual");
   const colors = [
     "#60d000",
@@ -24,10 +24,10 @@ window.addEventListener('load', () => {
 
   // Create function that makes bubbles //
   const createBubbles = (index) => {
-    const bubble = document.createElement("div");
+    const bubble = document.createElement("button");
     visual.appendChild(bubble);
     bubble.style.backgroundColor = colors[index];
-    bubble.style.animation = 'jump 1s ease';
+    bubble.style.animation = 'jump 2s ease';
     bubble.addEventListener('animationend', function(){
       visual.removeChild(this);
     })
