@@ -12,8 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;1,400&family=Unbounded:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+      crossorigin="anonymous"
+    />
     <title>DrumMachine:)TEZv</title>
     <style>
       body {
@@ -31,24 +35,38 @@
         <h2>Create Music on your keyboard</h2>
         <h3>Support Author Below</h3>
         <p class="footer-social-btn">
-            <a href="https://twitter.com/OksanaKolisnyk" target="_blank"><span class="fa fa-twitter fa-2x"></span></a>
-            <a href="https://codepen.io/TEZv" target="_blank"><span class="fa fa-codepen fa-2x"></span></a>
-            <a href="https://github.com/TEZv" target="_blank"><span class="fa fa-github fa-2x"></span></a>
+          <a href="https://twitter.com/OksanaKolisnyk" target="_blank"
+            ><span class="fa fa-twitter fa-2x"></span
+          ></a>
+          <a href="https://codepen.io/TEZv" target="_blank"
+            ><span class="fa fa-codepen fa-2x"></span
+          ></a>
+          <a href="https://github.com/TEZv" target="_blank"
+            ><span class="fa fa-github fa-2x"></span
+          ></a>
         </p>
       </header>
       <div class="visual"></div>
 
       <div class="pads">
-        <button  class="pad1">
-          <audio data-key="82" class="sound" src="./sounds/base_drum.mp3"></audio>
+        <button class="pad1">
+          <audio
+            data-key="82"
+            class="sound"
+            src="./sounds/base_drum.mp3"
+          ></audio>
           <kdb>R</kdb>
         </button>
         <button class="pad2">
           <audio data-key="84" class="sound" src="./sounds/bongo.mp3"></audio>
           <kdb>T</kdb>
         </button>
-        <button  class="pad3">
-          <audio data-key="89" class="sound" src="./sounds/bass_drum.wav"></audio>
+        <button class="pad3">
+          <audio
+            data-key="89"
+            class="sound"
+            src="./sounds/bass_drum.wav"
+          ></audio>
           <kdb>Y</kdb>
         </button>
         <button class="pad4">
@@ -56,23 +74,43 @@
           <kdb>D</kdb>
         </button>
         <button class="pad5">
-          <audio data-key="70" class="sound" src="./sounds/heavy_kick.mp3"></audio>
+          <audio
+            data-key="70"
+            class="sound"
+            src="./sounds/heavy_kick.mp3"
+          ></audio>
           <kdb>F</kdb>
         </button>
         <button class="pad6">
-          <audio data-key="71" class="sound" src="./sounds/kik1b_wet.mp3"></audio>
+          <audio
+            data-key="71"
+            class="sound"
+            src="./sounds/kik1b_wet.mp3"
+          ></audio>
           <kdb>G</kdb>
         </button>
         <button class="pad7">
-          <audio data-key="88" class="sound" src="./sounds/bass_hit.wav"></audio>
+          <audio
+            data-key="88"
+            class="sound"
+            src="./sounds/bass_hit.wav"
+          ></audio>
           <kdb>X</kdb>
         </button>
         <button class="pad8">
-          <audio data-key="67" class="sound" src="./sounds/yule_bell_lo.mp3"></audio>
+          <audio
+            data-key="67"
+            class="sound"
+            src="./sounds/yule_bell_lo.mp3"
+          ></audio>
           <kdb>C</kdb>
         </button>
         <button class="pad9">
-          <audio data-key="86" class="sound" src="./sounds/percussion.wav"></audio>
+          <audio
+            data-key="86"
+            class="sound"
+            src="./sounds/percussion.wav"
+          ></audio>
           <kdb>V</kdb>
         </button>
       </div>
@@ -80,7 +118,7 @@
 
     <script>
       const timers = {};
-      window.addEventListener('keydown', (e) => {
+      window.addEventListener("keydown", (e) => {
         const key = e.keyCode;
         const audio = document.querySelector(`audio[data-key="${key}"]`);
         if (audio) {
@@ -91,8 +129,11 @@
           audio.currentTime = 0;
           audio.play();
           const div = document.querySelector(`div.key[data-key="${key}"]`);
-          div.classList.add('playing');
-          timers[timerId] = setTimeout(() => div.classList.remove('playing'), 200);
+          div.classList.add("playing");
+          timers[timerId] = setTimeout(
+            () => div.classList.remove("playing"),
+            200
+          );
         }
       });
     </script>
