@@ -54,6 +54,7 @@ header > h1 {
   font-size: 50px;
   color: var(--green-color);
 }
+
 h2, h3 {
   font-family: "Karla", sans-serif;
   font-weight: 400;
@@ -62,6 +63,7 @@ h2, h3 {
   text-align: center;
   color: var(--yellow-color);
 }
+
 header > p {
   font-family: "Karla", sans-serif;
   font-size: 25px;
@@ -107,10 +109,20 @@ header > p {
         var(--light-pink-c-color));
 }
 
+kdb {
+  color: var(--blue-color);
+  font-size: 40px;
+  font-family: font-family: "Unbounded", cursive;
+}
+
+kdb:hover {
+  color: var(--purple-color);
+  font-size: 40px;
+  font-family: font-family: "Unbounded", cursive;
+}
 .footer-social-btn {
   padding: 0.7em 0;
 }
-
 
 .fa.fa-github {
   color: var(--white-color);
