@@ -60,7 +60,8 @@ header > p {
 .pad5,
 .pad6,
 .pad7,
-.pad8 {
+.pad8,
+.pad9 {
   background: linear-gradient(-200deg,
         var(--light-pink-b-color),
         var(--grey-color),
