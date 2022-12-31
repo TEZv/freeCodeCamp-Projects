@@ -1,115 +1,123 @@
 :root {
-    --black-color: rgb(15, 14, 22);
-    --sky-color: #75d3ff;
-    --blue-color: #172f3a;
-    --yellow-color: #ecff3e;
-    --light-blue-a--color: #20312f;
-    --grey-color: #3e535a;
-    --dark-blue-color: #17333a;
-    --light-blue-b-color: #0f3d58;
+  --black-color: rgb(15, 14, 22);
+  --sky-color: #75d3ff;
+  --blue-color: #172f3a;
+  --yellow-color: #ecff3e;
+  --light-blue-a--color: #20312f;
+  --grey-color: #3e535a;
+  --dark-blue-color: #17333a;
+  --light-blue-b-color: #0f3d58;
 }
 
 @-webkit-keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media screen and (max-width: 850px) {
-    .previewWrap {
-        max-width: 630px;
-    }
+  .previewWrap {
+    max-width: 630px;
+  }
 
-    .editorWrap {
-        max-width: 550px;
-    }
-        .maximized {
-            width: 96%;
-            min-height: 100vh;
-            margin: auto;
-        }
-    
-        .maximized textarea {
-            min-height: 90vh;
-            resize: none;
-        }
-    
-        .hide {
-            display: none;
-        }
+  .editorWrap {
+    max-width: 550px;
+  }
+  .maximized {
+    width: 96%;
+    min-height: 100vh;
+    margin: auto;
+  }
+
+  .maximized textarea {
+    min-height: 90vh;
+    resize: none;
+  }
+
+  .hide {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    body {
-        margin: 5px 0;
-    }
+  body {
+    margin: 5px 0;
+  }
 
-    .editorWrap {
-        width: 80vw;
-        margin: 0 auto;
-    }
+  .editorWrap {
+    width: 80vw;
+    margin: 0 auto;
+  }
 
-    .maximized {
-        width: 95%;
-        margin: auto;
-    }
+  .maximized {
+    width: 95%;
+    margin: auto;
+  }
 
-    .previewWrap {
-        width: 90vw;
-    }
+  .previewWrap {
+    width: 90vw;
+  }
 }
 
 @media screen and (max-width: 420px) {
-    body {
-        font-size: 0.875rem;
-    }
+  body {
+    font-size: 0.875rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--light-blue-a--color);
-    text-align: left;
-    margin: 10px 0;
-    background: linear-gradient(-90deg, var(--light-blue-a--color), var(--grey-color), var(--dark-blue-color), var(--light-blue-b-color));
-    background-size: 100% 500%;
-    -webkit-animation: gradient 12s ease infinite;
-    animation: gradient 12s ease infinite;
-    height: 100%;
-    width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--light-blue-a--color);
+  text-align: left;
+  margin: 10px 0;
+  background: linear-gradient(
+    -90deg,
+    var(--light-blue-a--color),
+    var(--grey-color),
+    var(--dark-blue-color),
+    var(--light-blue-b-color)
+  );
+  background-size: 100% 500%;
+  -webkit-animation: gradient 12s ease infinite;
+  animation: gradient 12s ease infinite;
+  height: 100%;
+  width: 100%;
 }
 
 a {
-    text-decoration: none;
-    color: var(--yellow-color);
+  text-decoration: none;
+  color: var(--yellow-color);
 }
