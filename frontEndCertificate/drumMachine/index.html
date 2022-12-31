@@ -39,36 +39,69 @@
       <div class="visual"></div>
 
       <div class="pads">
-        <button class="pad1">
-          <audio class="sound" src="./sounds/base_drum.mp3"></audio>
+        <button  class="pad1">
+          <audio data-key="82" class="sound" src="./sounds/base_drum.mp3"></audio>
+          <kdb>R</kdb>
         </button>
         <button class="pad2">
-          <audio class="sound" src="./sounds/bongo.mp3"></audio>
+          <audio data-key="84" class="sound" src="./sounds/bongo.mp3"></audio>
+          <kdb>T</kdb>
         </button>
-        <button class="pad3">
-          <audio class="sound" src="./sounds/bass_drum.wav"></audio>
+        <button  class="pad3">
+          <audio data-key="89" class="sound" src="./sounds/bass_drum.wav"></audio>
+          <kdb>Y</kdb>
         </button>
         <button class="pad4">
-          <audio class="sound" src="./sounds/g_sub.mp3"></audio>
+          <audio data-key="70" class="sound" src="./sounds/g_sub.mp3"></audio>
+          <kdb>F</kdb>
         </button>
         <button class="pad5">
-          <audio class="sound" src="./sounds/heavy_kick.mp3"></audio>
+          <audio data-key="71" class="sound" src="./sounds/heavy_kick.mp3"></audio>
+          <kdb>G</kdb>
         </button>
         <button class="pad6">
-          <audio class="sound" src="./sounds/kik1b_wet.mp3"></audio>
+          <audio data-key="72" class="sound" src="./sounds/kik1b_wet.mp3"></audio>
+          <kdb>H</kdb>
         </button>
-        <button class="pad7">
+        <button data-key="86" class="pad7">
           <audio class="sound" src="./sounds/bass_hit.wav"></audio>
+          <kdb>V</kdb>
         </button>
-        <button class="pad8">
+        <button data-key="66" class="pad8">
           <audio class="sound" src="./sounds/yule_bell_lo.mp3"></audio>
+          <kdb>B</kdb>
         </button>
-        <button class="pad9">
+        <button data-key="78" class="pad9">
           <audio class="sound" src="./sounds/percussion.wav"></audio>
+          <kdb>N</kdb>
         </button>
       </div>
     </div>
 
+    <script>
+      const timers = {};
+
+      window.addEventListener('keydown', (e) => {
+        const key = e.keyCode;
+        const audio = document.querySelector(`audio[data-key="${key}"]`);
+
+        if (audio) {
+          const timerId = `timer-${key}`;
+
+          if (timers[timerId] && timers[timerId].clearTimeout) {
+            timers[timerId].clearTimeout();
+          }
+
+          audio.currentTime = 0;
+          audio.play();
+
+          const div = document.querySelector(`div.key[data-key="${key}"]`);
+          div.classList.add('playing');
+
+          timers[timerId] = setTimeout(() => div.classList.remove('playing'), 200);
+        }
+      });
+    </script>
     <script src="./js/script.js"></script>
   </body>
 </html>
