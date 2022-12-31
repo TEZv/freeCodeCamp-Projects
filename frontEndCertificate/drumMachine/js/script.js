@@ -7,8 +7,12 @@ window.addEventListener('load', () => {
     "#e380e0",
     "#2260a3",
     "#d0d460",
-    "#f1aaca",
-    "#afb1c0",
+    "#fa4d9bb7",
+    "rgb(192, 181, 255)",
+    "rgba(215, 37, 221, 0.747)",
+    "rgb(111, 34, 255)",
+    "rgb(53, 37, 133)"
+
   ];
 
   // Sounds here //
