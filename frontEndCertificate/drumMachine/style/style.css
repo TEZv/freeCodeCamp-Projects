@@ -9,6 +9,7 @@
   --grey-color: #afb1c0;
   --purple-color: rgb(192, 181, 255);
   --white-color: rgb(111, 34, 255);
+  --black-color: rgb(9, 5, 27);
 }
 
 * {
@@ -73,16 +74,30 @@ header > p {
   padding: 0.7em 0;
 }
 
-p > a >.fa.fa-twitter {
-  margin: 0 1px;
-  color: var(--blue-color);
-}
 
 .fa.fa-github {
-  color: var(--purple-color);
-}
-
-.fa.fa-github:hover {
   color: var(--white-color);
 }
 
+.fa.fa-github:hover {
+  color: var(--purple-color);
+  width: 50px;
+}
+
+.fa.fa-codepen {
+  color: var(--grey-color);
+}
+
+.fa.fa-codepen:hover {
+  color: var(--yellow-color);
+  width: 50px;
+}
+
+.fa.fa-twitter {
+  color: var(--blue-color);
+}
+
+.fa.fa-twitter:hover {
+  color: var(--green-color);
+  width: 50px;
+}
