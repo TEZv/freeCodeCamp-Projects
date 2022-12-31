@@ -7,6 +7,8 @@
   --light-pink-b-color: #fa4d9bb7;
   --light-pink-c-color: rgba(215, 37, 221, 0.747);
   --grey-color: #afb1c0;
+  --purple-color: rgb(192, 181, 255);
+  --white-color: rgb(111, 34, 255);
 }
 
 * {
@@ -17,23 +19,18 @@
 
 body {
   font-family: "Unbounded", cursive;
-  background: linear-gradient(
-    -10deg,
-    var(--light-pink-b-color),
-    var(--grey-color),
-    var(--blue-color),
-    var(--light-pink-c-color)
-  );
 }
 
 header > h1 {
   font-size: 50px;
+  color: var(--green-color);
 }
 header > p {
   font-family: "Karla", sans-serif;
   font-size: 25px;
-  margin: 50px 0px 30px 0px;
+  margin: 30px 0px 30px 0px;
   text-align: center;
+  color: var(--yellow-color);
 }
 
 .app {
@@ -56,28 +53,19 @@ header > p {
   flex: 1;
 }
 
-.pad1 {
-  background: var(--green-color);
-}
-
-.pad2 {
-  background: var(--pink-color);
-}
-
-.pad3 {
-  background: var(--blue-color);
-}
-
-.pad4 {
-  background: var(--yellow-color);
-}
-
-.pad5 {
-  background: var(--light-pink-a-color);
-}
-
-.pad6 {
-  background: var(--grey-color);
+.pad1,
+.pad2,
+.pad3,
+.pad4,
+.pad5,
+.pad6,
+.pad7,
+.pad8 {
+  background: linear-gradient(-200deg,
+        var(--light-pink-b-color),
+        var(--grey-color),
+        var(--blue-color),
+        var(--light-pink-c-color));
 }
 
 .footer-social-btn {
@@ -90,6 +78,10 @@ p > a >.fa.fa-twitter {
 }
 
 .fa.fa-github {
-  color: var(--black-color);
+  color: var(--purple-color);
+}
+
+.fa.fa-github:hover {
+  color: var(--white-color);
 }
 
