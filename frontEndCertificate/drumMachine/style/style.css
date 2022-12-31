@@ -30,8 +30,9 @@
 
 .visual {
   width: 1500px;
-  height: 300px
+  height: 300px;
 }
+
 .visual > button {
   margin: 10px;
   height: 1.2em;
@@ -128,13 +129,13 @@ header > p {
 kdb {
   color: var(--blue-color);
   font-size: 40px;
-  font-family: font-family: "Unbounded", cursive;
+  font-family: "Unbounded", cursive;
 }
 
 kdb:hover {
   color: var(--purple-color);
   font-size: 40px;
-  font-family: font-family: "Unbounded", cursive;
+  font-family: "Unbounded", cursive;
 }
 .footer-social-btn {
   padding: 0.7em 0;
