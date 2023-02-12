@@ -300,7 +300,7 @@ function loadQuote() {
     " %23funny. " +
     " " +
     " " +
-    "Taken from: &url=https://tezv.github.io/freeCodeCamp-RandomQuoteMachine/";
+    "Taken from: &url=https://tezv-quote-machine.netlify.app/";
 
   // Here's a Display of the element with a quote on the page
   quoteBody.innerHTML = html;
